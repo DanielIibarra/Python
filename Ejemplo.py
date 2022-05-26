@@ -1,5 +1,7 @@
 import xml.etree.ElementTree as ET
 
+from numpy import number
+
 dates = '''
 <person>
 <name>Noe</name>
@@ -10,3 +12,5 @@ dates = '''
 
 tree  = ET.fromstring(dates)
 print("name:",tree.find('name').text)
+print("number: ",tree.find("number").text)
+print("Email: ",tree.find("email").get("hide"))
