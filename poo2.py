@@ -1,4 +1,4 @@
-from poo import prueba
+from poo1 import prueba
 
 an = prueba("Noe")
 
