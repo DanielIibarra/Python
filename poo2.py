@@ -1,8 +1,17 @@
 from poo1 import prueba
 
-an = prueba("Noe")
+class prueba2(prueba):
 
-ar = prueba("Daniel")
+    puntos = 0
 
-an.mas()
-ar.mas()
+    def seis(self):
+        self.puntos = self.puntos+6
+        self.mas()
+        print(self.nom,"Puntos",self.puntos)
+
+s=prueba("Noe")
+s.mas()
+j=prueba2("jim")
+j.mas()
+j.seis()
+print(dir(j))
