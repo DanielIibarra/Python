@@ -14,7 +14,7 @@ cur.execute("SELECT nombre,años FROM Prueba")
 for line in cur:
     print(line)
 
-cur.execute("DELETE FROM Prueba WHERE Años<100")
+#cur.execute("DELETE FROM Prueba WHERE Años<100")
 date.commit()
 
 cur.close()
