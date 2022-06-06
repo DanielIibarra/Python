@@ -24,5 +24,7 @@ for line in data:
 
 sqlstr = "SELECT email,count FROM Counts ORDER BY count DESC LIMIT 10"
 for line1 in file.execute(sqlstr):
-    print(line1)
+    print(str(line1[0]),line1[1])
+
+cur.close()
 
